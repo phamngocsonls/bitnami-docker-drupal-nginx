@@ -11,8 +11,8 @@ services:
   drupal:
     image: 'docker.io/bitnami/drupal-nginx:9-debian-10'
     ports:
-      - '80:8080'
-      - '443:8443'
+      - '8000:8080'
+      - '8443:8443'
     environment:
       - DRUPAL_DATABASE_HOST=mariadb
       - DRUPAL_DATABASE_PORT_NUMBER=3306
